@@ -1,34 +1,32 @@
-# Ghostwriter
+# rabit
 
-Ghostwriter is a simple AJAX driven theme for the [Ghost](http://github.com/tryghost/ghost/) blogging platform released under the MIT License.
+Rabit is a light and quick theme for [Ghost](http://github.com/tryghost/ghost/).
 
-**[View a demo of Ghostwriter](http://ghost.jollygoodthemes.com/ghostwriter/)**
+## Credit
 
-**[Download Ghostwriter](https://github.com/roryg/ghostwriter/archive/master.zip)**
+This theme is a custom fork of [Ghostwriter](https://github.com/roryg/ghostwriter).
 
-**[See more of my themes](http://jollygoodthemes.com)**
+## [LICENSE](LICENSE)
 
-### Features
+Copyright (c) 2014 Sean Clayton - Released under The MIT License.
 
-* Supports Ghost 0.4
-* Clean typography focused design.
-* Fully responsive (includes fitvid.js for responsive video embeds).
-* AJAX loading for fast, smooth transitions between posts and pages.
-* SASS files included.
-* Static page support.
-* Featured post support.
-* A bunch of other bits and bobs.
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without
+restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following
+conditions:
 
-### Static Pages and Navigation
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
 
-Ghost 0.4 introduced static pages which you can use for making pages separate from your list of blog posts. There isn't however a way to output a list of static pages for navigation yet so you'll need to edit the navigation menu in the default.hbs file yourself. The HTML for the menu starts on `line 37` of the default.hbs file and contains an example `About` menu item on `line 40`.
-
-### Troubleshooting
-
-###### The Browse Posts link isn't working
-
-If you're having trouble with the browse posts link not working make sure you're using the currect URL for your environment in your Ghost config.js file. I.e. if your Ghost site is being served on http://your-site-name.com make sure you use exactly that URL in your config.js file and not for example http://www.your-site-name.com
-
-### Screenshot
-
-![Ghostwriter home page](https://github.com/roryg/ghostwriter/blob/master/screenshot.png?raw=true)
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
