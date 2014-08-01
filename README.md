@@ -1,6 +1,8 @@
 # rabit
 
-Rabit is a light and quick theme for [Ghost](http://github.com/tryghost/ghost/).
+### About
+
+Rabit is a light and quick theme for [Ghost](http://github.com/tryghost/ghost/). It was made for [my blog](http://blog.skulbuny.com).
 
 ### Usage
 
