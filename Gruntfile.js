@@ -5,12 +5,19 @@ module.exports = function(grunt) {
     watch: {
       files: ['assets/sass/*.scss'],
       tasks: ['sass']
+    },
+    sass: {
+      dist: {
+        files: {
+          'assets/css/style.css': 'assets/sass/style.scss'
+        }
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-sass');
 
-  grunt.registerTask('dev', ['watch']);
+  grunt.registerTask('dev', ['sass', 'watch']);
 
 };
