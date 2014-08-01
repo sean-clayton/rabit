@@ -2,11 +2,17 @@
 
 Rabit is a light and quick theme for [Ghost](http://github.com/tryghost/ghost/).
 
-## Credit
+### Usage
+
+`npm i` - Installs developer dependencies
+`grunt dev` - Runs a server in developer mode (watches and compiles Sass)
+`grunt changelog` - Generates a changelog
+
+### Credit
 
 This theme is a custom fork of [Ghostwriter](https://github.com/roryg/ghostwriter).
 
-## [LICENSE](LICENSE)
+### [LICENSE](LICENSE)
 
 Copyright (c) 2014 Sean Clayton - Released under The MIT License.
 
