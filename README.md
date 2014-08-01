@@ -1,12 +1,20 @@
 # rabit
 
-Rabit is a light and quick theme for [Ghost](http://github.com/tryghost/ghost/).
+### About
 
-## Credit
+Rabit is a light and quick theme for [Ghost](http://github.com/tryghost/ghost/). It was made for [my blog](http://blog.skulbuny.com).
+
+### Usage
+
+`npm i` - Installs developer dependencies
+
+`grunt dev` - Runs a server in developer mode (watches and compiles Sass)
+
+### Credit
 
 This theme is a custom fork of [Ghostwriter](https://github.com/roryg/ghostwriter).
 
-## [LICENSE](LICENSE)
+### [LICENSE](LICENSE)
 
 Copyright (c) 2014 Sean Clayton - Released under The MIT License.
 

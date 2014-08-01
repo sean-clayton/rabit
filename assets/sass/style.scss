@@ -2,9 +2,9 @@
 // Colours //
 // ============================================================ //
 
-$primary: #F03838;
-$secondary: #303030;
-$background: #FEFEFE;
+$primary: #09f;
+$secondary: #202020;
+$background: #f0f0f0;
 
 /* ============================================================ */
 /* Base */
@@ -95,7 +95,7 @@ table {
     margin-bottom:40px;
     width: 100%;
 
-    tbody > tr:nth-child(odd) > td, 
+    tbody > tr:nth-child(odd) > td,
     tbody > tr:nth-child(odd) > th {
         background-color: #f7f7f3;
     }
