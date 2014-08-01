@@ -7,8 +7,8 @@ Rabit is a light and quick theme for [Ghost](http://github.com/tryghost/ghost/).
 ### Usage
 
 `npm i` - Installs developer dependencies
+
 `grunt dev` - Runs a server in developer mode (watches and compiles Sass)
-`grunt changelog` - Generates a changelog
 
 ### Credit
 
