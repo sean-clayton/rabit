@@ -29,7 +29,11 @@
 .site-logo {
   display: block;
 
-  img { margin: 0; }
+  img {
+    height: 128px;
+    width: 128px;
+    margin: 0;
+  }
 }
 
 .site-nav {
