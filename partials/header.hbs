@@ -9,9 +9,5 @@
 </div>
 
 <ul class="site-nav">
-  <li class="site-nav-item"><a title="skulbuny code" href="http://skulbuny.com">My Code</a></li>
-
-  {{#if @blog.logo}}
-    <li class="site-nav-item"><a href="{{@blog.url}}/rss">RSS</a></li>
-  {{/if}}
+  {{> nav}}
 </ul>
