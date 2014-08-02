@@ -30,8 +30,9 @@
   display: block;
 
   img {
-    height: 128px;
-    width: 128px;
+    $size: 96px;
+    height: $size;
+    width: $size;
     margin: 0;
   }
 }
