@@ -14,11 +14,11 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: none;
 }
 
-h1 { font-size: modular-scale($base-font-size, 3, $major-third); font-weight: 400; }
-h2 { font-size: modular-scale($base-font-size, 2.75, $major-third); font-weight: 400; }
-h3 { font-size: modular-scale($base-font-size, 2.5, $major-third); font-weight: 400; margin-bottom: 20px; }
-h4 { font-size: modular-scale($base-font-size, 2.25, $major-third); margin-bottom: 18px; }
-h5 { font-size: modular-scale($base-font-size, 2.0, $major-third); margin-bottom: 15px; }
+h1 { font-size: modular-scale($base-font-size, 2.75, $major-third); font-weight: 400; }
+h2 { font-size: modular-scale($base-font-size, 2.5, $major-third); font-weight: 400; }
+h3 { font-size: modular-scale($base-font-size, 2.25, $major-third); font-weight: 400; margin-bottom: 20px; }
+h4 { font-size: modular-scale($base-font-size, 2.0, $major-third); margin-bottom: 18px; }
+h5 { font-size: modular-scale($base-font-size, 1.75, $major-third); margin-bottom: 15px; }
 h6 { font-size: modular-scale($base-font-size, 1.5, $major-third); margin-bottom: 12px; }
 
 p {
