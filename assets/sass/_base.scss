@@ -1,6 +1,6 @@
 html, body {
   height: 100%;
-  font-size: modular-scale($base-font-size, .5, $major-third);
+  font-size: modular-scale($base-font-size, 0, $major-third);
 }
 
 body {
