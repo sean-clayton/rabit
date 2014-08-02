@@ -528,5 +528,5 @@ table {
 .love {
   $color: #f59ae8;
   color: $color;
-  @box-shadow(0 0 5px $color);
+  @include box-shadow(0 0 5px $color);
 }
