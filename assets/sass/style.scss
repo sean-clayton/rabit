@@ -12,6 +12,9 @@ $special-font: "Roboto Condensed";
 /* Base */
 /* ============================================================ */
 
+@import 'normalize';
+@import 'nprogress';
+
 html, body { height: 100%; }
 
 body {
