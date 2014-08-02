@@ -526,6 +526,7 @@ table {
 /* Custom Classes */
 
 .love {
-  color: #f59ae8;
-
+  $color: #f59ae8;
+  color: $color;
+  @box-shadow(0 0 5px $color);
 }
