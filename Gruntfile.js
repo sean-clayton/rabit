@@ -25,6 +25,7 @@ module.exports = function(grunt) {
           'assets/css/style.min.css': 'assets/sass/style.scss' // Compiles your SASS into a nice css file
         },
         options: {
+          includePaths: require('node-bourbon').includePaths,
           outputStyle: 'compressed'
         }
       }
@@ -37,7 +38,8 @@ module.exports = function(grunt) {
         options: {
           compress: true,
           mangle: true, // When set to false, it prevents variable/function name changes
-          footer: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' + '<%= grunt.template.today("yyyy-mm-dd") %> */' // Adds line at the end of the outputted file. The above will output something like /*! rabit - v1.0.0 - 2014-1-1 */
+          banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' + '<%= grunt.template.today("yyyy-mm-dd") %> */\n', // Adds line at the end of the outputted file. The above will output something like /*! rabit - v1.0.0 - 2014-1-1 */
+          footer: '\n// Written by <%= pkg.author %>'
         }
       }
     }

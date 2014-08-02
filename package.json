@@ -1,9 +1,11 @@
 {
   "name": "rabit",
-  "version": "0.2.1",
+  "version": "0.4.0",
+  "author": "Sean Clayton",
   "devDependencies": {
     "grunt-contrib-watch": "^0.6.1",
     "grunt-sass": "^0.14.0",
-    "grunt-contrib-uglify": "^0.5.1"
+    "grunt-contrib-uglify": "^0.5.1",
+    "node-bourbon": "^1.2.3"
   }
 }

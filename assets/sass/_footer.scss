@@ -1,0 +1,35 @@
+.footer {
+  background: $secondary;
+  color: #D3D3D3;
+  height: 265px;
+  overflow: auto;
+  text-shadow: 0 1px 0 rgba(black, .25);
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #656565;
+
+  .site-title-wrapper { margin: 80px auto 35px; }
+
+  .site-title a:hover,
+  .button-square:hover {
+    background: #121212;
+  }
+
+  .button-jump-top {
+    font-size: 23px;
+    line-height: 1.1;
+    padding-top: 1px;
+  }
+}
+
+.footer-copyright {
+  margin: 0;
+
+  a {
+    color: #656565;
+    font-weight: 700;
+
+    &:hover { color: #FEFEFE; }
+  }
+}
