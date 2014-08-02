@@ -3,8 +3,6 @@
 .post-container { margin: 0 40px; }
 
 .post-header {
-  border-bottom: 6px solid $secondary;
-  margin: 0 0 50px;
   padding: 0 0 80px;
   text-align: center;
   text-transform: uppercase;
@@ -12,7 +10,7 @@
 
 .post-title,
 .page-title {
-  font-size: 48px;
+  font-size: golden-ratio(48px, 1);
   font-weight: 400;
   margin: 15px 0;
   text-align: center;
