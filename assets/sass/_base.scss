@@ -4,7 +4,7 @@ body {
   background: $background;
   color: #424242;
   font-family: $copy-font, arial, sans-serif;
-  font-size: modular-scale($base-font-size, 1, $major-third);
+  font-size: modular-scale($base-font-size, .5, $major-third);
 }
 
 h1, h2, h3, h4, h5, h6 {
