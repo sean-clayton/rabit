@@ -4,7 +4,7 @@ body {
   background: $background;
   color: #424242;
   font-family: $copy-font, arial, sans-serif;
-  font-size: golden-ratio(18px, 1);
+  font-size: modular-scale($base-font-size, 1, $major-third);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -14,12 +14,12 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: none;
 }
 
-h1 { font-size: golden-ratio(26px, 1); font-weight: 400; }
-h2 { font-size: golden-ratio(24px, 1); font-weight: 400; }
-h3 { font-size: golden-ratio(20px, 1); font-weight: 400; margin-bottom: 20px; }
-h4 { font-size: golden-ratio(18px, 1); margin-bottom: 18px; }
-h5 { font-size: golden-ratio(16px, 1); margin-bottom: 15px; }
-h6 { font-size: golden-ratio(14px, 1); margin-bottom: 12px; }
+h1 { font-size: modular-scale($base-font-size, 3, $major-third); font-weight: 400; }
+h2 { font-size: modular-scale($base-font-size, 2.75, $major-third); font-weight: 400; }
+h3 { font-size: modular-scale($base-font-size, 2.5, $major-third); font-weight: 400; margin-bottom: 20px; }
+h4 { font-size: modular-scale($base-font-size, 2.25, $major-third); margin-bottom: 18px; }
+h5 { font-size: modular-scale($base-font-size, 2.0, $major-third); margin-bottom: 15px; }
+h6 { font-size: modular-scale($base-font-size, 1.5, $major-third); margin-bottom: 12px; }
 
 p {
   line-height: 1.8;
