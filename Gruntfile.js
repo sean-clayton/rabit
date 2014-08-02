@@ -25,6 +25,7 @@ module.exports = function(grunt) {
           'assets/css/style.min.css': 'assets/sass/style.scss' // Compiles your SASS into a nice css file
         },
         options: {
+          includePaths: require('node-bourbon').includePaths,
           outputStyle: 'compressed'
         }
       }
