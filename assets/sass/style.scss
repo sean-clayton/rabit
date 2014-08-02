@@ -20,18 +20,20 @@ html, body { height: 100%; }
 body {
   background: $background;
   color: #424242;
-  font-family: "Roboto", arial, sans-serif;
+  font-family: $body-font, arial, sans-serif;
   font-size: 18px;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: $special-font, "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-weight: 700;
   margin-bottom: 33px;
   text-transform: none;
 }
 
-h1 { font-size: 26px; }
-h2 { font-size: 24px; }
-h3 { font-size: 20px; margin-bottom: 20px; }
+h1 { font-size: 26px; font-weight: 400 }
+h2 { font-size: 24px; font-weight: 400 }
+h3 { font-size: 20px; font-weight: 400, margin-bottom: 20px; }
 h4 { font-size: 18px; margin-bottom: 18px; }
 h5 { font-size: 16px; margin-bottom: 15px; }
 h6 { font-size: 14px; margin-bottom: 12px; }
