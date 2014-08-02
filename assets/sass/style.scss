@@ -1,7 +1,6 @@
 /* IMPORT EVERYTHING! */
 
 @import 'includes';
-@import 'bourbon/bourbon';
 
 // ============================================================ //
 // Colours //
@@ -23,7 +22,7 @@ body {
   background: $background;
   color: #424242;
   font-family: $copy-font, arial, sans-serif;
-  font-size: 18px;
+  font-size: golden-ratio(18px, 1);
 }
 
 h1, h2, h3, h4, h5, h6 {
