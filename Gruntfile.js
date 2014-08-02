@@ -3,8 +3,14 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     watch: {
-      files: ['assets/sass/*.scss'],
-      tasks: ['sass']
+      sass: {
+        files: ['assets/sass/*.scss'],
+        tasks: ['sass']
+      },
+      js: {
+        files: ['assets/js/scripts/*.js'],
+        tasks: ['uglfiy']
+      }
     },
     sass: {
       dist: {
@@ -15,12 +21,24 @@ module.exports = function(grunt) {
           outputStyle: 'compressed'
         }
       }
+    },
+    uglify: {
+      dist: {
+        files: {
+          'assets/js/rabit.min.js': ['assets/js/scripts/*.js']
+        },
+        options: {
+          compress: true,
+          mangle: false
+        }
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-sass');
 
-  grunt.registerTask('dev', ['sass', 'watch']);
+  grunt.registerTask('dev', ['uglify', 'sass', 'watch']);
 
 };
