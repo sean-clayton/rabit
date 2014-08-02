@@ -1,0 +1,50 @@
+.container {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  max-width: 889px;
+}
+
+#wrapper {
+  height: auto;
+    min-height: 100%;
+  /* This must be the same as the height of the footer */
+  margin-bottom: -265px;
+
+  &:after {
+    content: "";
+    display: block;
+    /* This must be the same as the height of the footer */
+    height: 265px;
+  }
+}
+
+.button {
+  background: $secondary;
+  border: none;
+  border-radius: 3px;
+  color: #FEFEFE;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 12px;
+  text-transform: uppercase;
+
+  &:hover { background: $primary; }
+}
+
+.button-square {
+  background: $primary;
+  color: #FFF;
+  float: left;
+  font-size: 17px;
+  margin: 0 0 0 10px;
+  padding: 3px 8px 4px;
+
+  &:hover { background: $secondary; }
+}
+
+.love {
+  $color: #f59ae8;
+  color: $color;
+  text-shadow: 0 0 5px $color;
+}
