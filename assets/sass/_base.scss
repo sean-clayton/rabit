@@ -14,12 +14,12 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: none;
 }
 
-h1 { font-size: 26px; font-weight: 400; }
-h2 { font-size: 24px; font-weight: 400; }
-h3 { font-size: 20px; font-weight: 400; margin-bottom: 20px; }
-h4 { font-size: 18px; margin-bottom: 18px; }
-h5 { font-size: 16px; margin-bottom: 15px; }
-h6 { font-size: 14px; margin-bottom: 12px; }
+h1 { font-size: golden-ratio(26px, 1); font-weight: 400; }
+h2 { font-size: golden-ratio(24px, 1); font-weight: 400; }
+h3 { font-size: golden-ratio(20px, 1); font-weight: 400; margin-bottom: 20px; }
+h4 { font-size: golden-ratio(18px, 1); margin-bottom: 18px; }
+h5 { font-size: golden-ratio(16px, 1); margin-bottom: 15px; }
+h6 { font-size: golden-ratio(14px, 1); margin-bottom: 12px; }
 
 p {
   line-height: 1.8;
