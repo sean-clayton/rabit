@@ -58,7 +58,7 @@ jQuery(function($) {
       $('html, body').animate({'scrollTop': 0});
 
       $ajaxContainer.fadeOut(500, function() {
-        $latestPost = $newContent.filter('#latest-post');
+        // $latestPost = $newContent.filter('#latest-post');
         $postIndex = $newContent.filter('#post-index');
 
         if (showIndex === true) {
