@@ -11,7 +11,7 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     watch: {
       sass: {
-        files: ['assets/sass/*.scss'], // Watches for scss file changes in the sass directory
+        files: ['assets/sass/**/*.scss'], // Watches for scss file changes in the sass directory
         tasks: ['sass'] // Runs the sass task below if there is a change
       },
       js: {
