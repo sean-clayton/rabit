@@ -2,14 +2,15 @@
 
 .post-container { margin: 0 40px; }
 
-.post-header {
+.post-header, .index-header {
   padding: 0 0 2em;
   text-align: center;
   text-transform: uppercase;
 }
 
 .post-title,
-.page-title {
+.page-title,
+.index-title {
   font-weight: 400;
   margin: 15px 0;
   text-align: center;
