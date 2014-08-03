@@ -117,7 +117,8 @@ jQuery(function($) {
 
             hljs.initHighlighting.called = false;
             hljs.initHighlighting();
-            
+            console.log('Added Highlighting');
+
           });
         } else {
           $('html, body').animate({'scrollTop': 0});
