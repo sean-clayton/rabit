@@ -6,6 +6,10 @@ jQuery(function($) {
 
   $(".post-content").fitVids();
 
+  ;(function ($) {
+    $('#ajax-container').smoothState();
+  })(jQuery);
+
   /* ============================================================ */
   /* Scroll To Top */
   /* ============================================================ */
