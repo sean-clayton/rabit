@@ -65,7 +65,7 @@ jQuery(function($) {
           // $latestPost.hide();
         } else {
           // $latestPost.show();
-          $postIndex.hide();
+          // $postIndex.hide();
         }
 
         // Re run fitvid.js
@@ -115,8 +115,8 @@ jQuery(function($) {
           NProgress.start();
 
           // $latestPost.fadeOut(300, function() {
-          //   $postIndex.fadeIn(300);
-          //   NProgress.done();
+            $postIndex.fadeIn(300);
+            NProgress.done();
           //
           // });
         } else {
