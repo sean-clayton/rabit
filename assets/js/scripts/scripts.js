@@ -25,7 +25,7 @@ jQuery(function($) {
   var showIndex = false;
   var $ajaxContainer = $('#ajax-container');
   var $postIndex = $('#post-index');
-  var $latestPost = $postIndex;
+  var $latestPost = $('#post-index');
 
   // Initially hide the index and show the latest post
   $latestPost.show();
