@@ -1,6 +1,10 @@
+pre {
+  padding: .5em;
+  border-radius: .33em;
+}
+
 pre, code {
   display: block;
-  padding: .5em;
   background: $blak;
   color: $wite;
   text-shadow: 0 1px 0 rgba(black, 1);
