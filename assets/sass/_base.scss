@@ -99,8 +99,9 @@ table {
 }
 
 ::selection {
-  background: rgba($primary, .25);
+  background: rgba($primary, .5);
   display: block;
+  text-shadow: none;
 }
 
 ::-moz-selection {
