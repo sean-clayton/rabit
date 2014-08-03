@@ -1,5 +1,8 @@
-pre, code {
-  -webkit-font-smoothing: antialiased;
+
+@if $font-smoothing {
+  pre, code {
+    -webkit-font-smoothing: antialiased;
+  }
 }
 
 p code {
