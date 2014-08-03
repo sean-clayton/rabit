@@ -28,7 +28,7 @@ jQuery(function($) {
   var $postIndex = $('#post-index');
 
   // Initially hide the index and show the latest post
-  $latestPost.show();
+  // $latestPost.show();
   $postIndex.hide();
 
   // Show the index if the url has "page" in it (a simple
