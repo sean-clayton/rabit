@@ -70,6 +70,12 @@ jQuery(function($) {
 
         // Re run fitvid.js
         $newContent.fitVids();
+        $(document).ready(function() {
+          $('pre code').each(function(i, block) {
+            hljs.highlightBlock(block);
+          });
+        };)
+
         $ajaxContainer.html($newContent);
         $ajaxContainer.fadeIn(500);
 
@@ -118,7 +124,7 @@ jQuery(function($) {
           $('html, body').animate({'scrollTop': 0});
 
           NProgress.start();
-          hljs.initHighlightingOnLoad();
+
           $postIndex.fadeOut(300, function() {
             $latestPost.fadeIn(300);
             NProgress.done();
