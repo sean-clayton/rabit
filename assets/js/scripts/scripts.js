@@ -24,17 +24,17 @@ jQuery(function($) {
   var loading = false;
   var showIndex = false;
   var $ajaxContainer = $('#ajax-container');
-  // var $latestPost = $('#latest-post');
+  var $latestPost = $('#latest-post');
   var $postIndex = $('#post-index');
 
   // Initially hide the index and show the latest post
-  // $latestPost.show();
-  $postIndex.show();
+  $latestPost.show();
+  $postIndex.hide();
 
   // Show the index if the url has "page" in it (a simple
   // way of checking if we're on a paginated page.)
   if (window.location.pathname.indexOf('page') === 1 || window.location.pathname.indexOf('tag') === 1) {
-    // $latestPost.hide();
+    $latestPost.hide();
     $postIndex.show();
   }
 
@@ -58,14 +58,14 @@ jQuery(function($) {
       $('html, body').animate({'scrollTop': 0});
 
       $ajaxContainer.fadeOut(500, function() {
-        // $latestPost = $newContent.filter('#latest-post');
+        $latestPost = $newContent.filter('#latest-post');
         $postIndex = $newContent.filter('#post-index');
 
         if (showIndex === true) {
-          // $latestPost.hide();
+          $latestPost.hide();
         } else {
-          // $latestPost.show();
-          // $postIndex.hide();
+          $latestPost.show();
+          $postIndex.hide();
         }
 
         // Re run fitvid.js
@@ -114,18 +114,18 @@ jQuery(function($) {
 
           NProgress.start();
 
-          // $latestPost.fadeOut(300, function() {
+          $latestPost.fadeOut(300, function() {
             $postIndex.fadeIn(300);
             NProgress.done();
-          //
-          // });
+
+          });
         } else {
           $('html, body').animate({'scrollTop': 0});
 
           NProgress.start();
 
           $postIndex.fadeOut(300, function() {
-            // $latestPost.fadeIn(300);
+            $latestPost.fadeIn(300);
             NProgress.done();
           });
         }
