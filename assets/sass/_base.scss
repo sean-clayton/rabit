@@ -98,9 +98,17 @@ table {
   tr { border-bottom: 1px dotted #AEADAD; }
 }
 
-::selection, ::-moz-selection {
-  background: rgba($primary, .75);
+.selection {
+  background: rgba($primary, 1);
   display: block;
+}
+
+::selection {
+  @extend .selection;
+}
+
+::-moz-selection {
+  @extend .selection;
 }
 
 .fluid-width-video-wrapper { margin-bottom: 40px; }
