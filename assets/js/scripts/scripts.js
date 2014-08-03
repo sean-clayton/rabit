@@ -70,7 +70,9 @@ jQuery(function($) {
 
         // Re run fitvid.js
         $newContent.fitVids();
-        initHighlightingOnLoad();
+
+        hljs.initHighlighting.called = false;
+        hljs.initHighlighting();
 
         $ajaxContainer.html($newContent);
         $ajaxContainer.fadeIn(500);
