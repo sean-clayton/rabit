@@ -110,7 +110,7 @@ jQuery(function($) {
           $('html, body').animate({'scrollTop': 0});
 
           NProgress.start();
-
+          hljs.initHighlightingOnLoad();
           $latestPost.fadeOut(300, function() {
             $postIndex.fadeIn(300);
             NProgress.done();
