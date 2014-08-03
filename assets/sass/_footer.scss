@@ -1,4 +1,5 @@
 .footer {
+  box-sizing: border-box;
   background: $secondary;
   color: #D3D3D3;
   height: $footer-height;
@@ -8,7 +9,7 @@
   text-align: center;
   text-transform: uppercase;
   color: #656565;
-  padding: ($footer-height / 2.8125) 0 0 0;
+  padding: 0;
 
   .site-title-wrapper { margin: 80px auto 35px; }
 
