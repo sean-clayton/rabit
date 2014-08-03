@@ -99,16 +99,17 @@ table {
 }
 
 .selection {
-  background: rgba($primary, 1);
   display: block;
 }
 
 ::selection {
   @extend .selection;
+  background: rgba($primary, 1);
 }
 
 ::-moz-selection {
   @extend .selection;
+  background: rgba($primary, 1);
 }
 
 .fluid-width-video-wrapper { margin-bottom: 40px; }
