@@ -54,11 +54,10 @@
   height: 2em;
   font-size: 1em;
   background: $primary;
-  color: $secondary;
+  color: white;
   @include transition(140ms ease all);
 
   &:hover {
     background: $blue;
-    color: white;
   }
 }
