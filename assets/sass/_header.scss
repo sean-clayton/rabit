@@ -5,6 +5,12 @@
   text-transform: uppercase;
 }
 
+.index-title, .post-title, .page-title {
+  a {
+    color: $secondary;
+  }
+}
+
 .site-title-wrapper {
   display: table;
   margin: 0 auto;
