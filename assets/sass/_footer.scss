@@ -1,7 +1,7 @@
 .footer {
   background: $secondary;
   color: #D3D3D3;
-  height: 265px;
+  height: $footer-height;
   overflow: auto;
   text-shadow: 0 1px 0 rgba(black, .25);
   font-size: 14px;
