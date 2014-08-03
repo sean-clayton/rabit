@@ -34,7 +34,7 @@ jQuery(function($) {
   // Show the index if the url has "page" in it (a simple
   // way of checking if we're on a paginated page.)
   if (window.location.pathname.indexOf('page') === 1 || window.location.pathname.indexOf('tag') === 1) {
-    $latestPost.hide();
+    // $latestPost.hide();
     $postIndex.show();
   }
 
