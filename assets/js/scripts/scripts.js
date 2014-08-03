@@ -74,6 +74,10 @@ jQuery(function($) {
         $ajaxContainer.html($newContent);
         $ajaxContainer.fadeIn(500);
 
+        hljs.initHighlighting.called = false;
+        hljs.initHighlighting();
+        console.log('Added Highlighting');
+
         NProgress.done();
 
         loading = false;
@@ -115,10 +119,6 @@ jQuery(function($) {
             $postIndex.fadeIn(300);
             NProgress.done();
 
-            hljs.initHighlighting.called = false;
-            hljs.initHighlighting();
-            console.log('Added Highlighting');
-
           });
         } else {
           $('html, body').animate({'scrollTop': 0});
@@ -133,5 +133,4 @@ jQuery(function($) {
       }
     }
   });
-  hljs.initHighlightingOnLoad();
 });
