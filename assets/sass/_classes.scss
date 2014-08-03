@@ -46,3 +46,14 @@
   color: $color;
   text-shadow: 0 0 5px $color;
 }
+
+.button-social {
+  background: $primary;
+  color: $secondary;
+  @include transition(140ms ease all);
+
+  &:hover {
+    background: $blue;
+    color: white;
+  }
+}
