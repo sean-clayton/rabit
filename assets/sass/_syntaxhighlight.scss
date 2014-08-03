@@ -1,6 +1,10 @@
+pre, code {
+  -webkit-font-smoothing: antialiased;
+}
+
 p code {
-  padding: .5em;
-  border-radius: 1px;
+  padding: .33em;
+  border-radius: 3px;
   color: $wite;
   background: $blak;
   text-shadow: 0 1px 0 rgba(black, 1);
