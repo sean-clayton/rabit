@@ -98,14 +98,8 @@ table {
   tr { border-bottom: 1px dotted #AEADAD; }
 }
 
-::selection {
-  background: rgba($primary, 1);
-  display: block;
-}
-
-::-moz-selection {
-  background: #FFF5B8;
-  color: #000;
+::selection, ::-moz-selection {
+  background: rgba($primary, .75);
   display: block;
 }
 
