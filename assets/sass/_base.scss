@@ -104,12 +104,12 @@ table {
 
 ::selection {
   @extend .selection;
-  background: rgba($primary, 1);
+  background: rgba($primary, .75);
 }
 
 ::-moz-selection {
   @extend .selection;
-  background: rgba($primary, 1);
+  background: rgba($primary, .75);
 }
 
 .fluid-width-video-wrapper { margin-bottom: 40px; }
