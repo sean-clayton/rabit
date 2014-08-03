@@ -99,8 +99,7 @@ table {
 }
 
 ::selection {
-  background: #FFF5B8;
-  color: #000;
+  background: rgba($primary, .25);
   display: block;
 }
 
