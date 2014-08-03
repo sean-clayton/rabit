@@ -76,7 +76,6 @@ jQuery(function($) {
 
         hljs.initHighlighting.called = false;
         hljs.initHighlighting();
-        console.log('Added Highlighting');
 
         NProgress.done();
 
@@ -133,5 +132,5 @@ jQuery(function($) {
       }
     }
   });
-  
+
 });
