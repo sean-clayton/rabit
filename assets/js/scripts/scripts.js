@@ -132,5 +132,5 @@ jQuery(function($) {
       }
     }
   });
-
+  InstantClick.init();
 });
