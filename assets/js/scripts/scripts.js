@@ -71,9 +71,6 @@ jQuery(function($) {
         // Re run fitvid.js
         $newContent.fitVids();
 
-        hljs.initHighlighting.called = false;
-        hljs.initHighlighting();
-
         $ajaxContainer.html($newContent);
         $ajaxContainer.fadeIn(500);
 
@@ -117,6 +114,10 @@ jQuery(function($) {
           $latestPost.fadeOut(300, function() {
             $postIndex.fadeIn(300);
             NProgress.done();
+
+            hljs.initHighlighting.called = false;
+            hljs.initHighlighting();
+            
           });
         } else {
           $('html, body').animate({'scrollTop': 0});
