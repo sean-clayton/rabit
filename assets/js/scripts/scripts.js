@@ -129,5 +129,5 @@ jQuery(function($) {
       }
     }
   });
-
+  hljs.initHighlightingOnLoad();
 });
