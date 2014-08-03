@@ -2,8 +2,8 @@ pre code {
   display: block;
   padding: .5em;
   background: $blak;
-  color: #e6e1dc;
-  text-shadow: 0 1px 0 rgba($blak, 1);
+  color: $wite;
+  text-shadow: 0 1px 0 rgba(black, 1);
 }
 
 pre .comment,pre .template_comment,pre .javadoc,pre .shebang {
