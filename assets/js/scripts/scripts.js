@@ -70,9 +70,7 @@ jQuery(function($) {
 
         // Re run fitvid.js
         $newContent.fitVids();
-        $('pre code').each(function(i, block) {
-          hljs.highlightBlock(block);
-        });
+        hljs.highlightBlock($newContent);
 
         $ajaxContainer.html($newContent);
         $ajaxContainer.fadeIn(500);
