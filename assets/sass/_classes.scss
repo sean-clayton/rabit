@@ -48,6 +48,8 @@
 }
 
 .button-social {
+  padding: .25em;
+  font-size: 1em;
   background: $primary;
   color: $secondary;
   @include transition(140ms ease all);
