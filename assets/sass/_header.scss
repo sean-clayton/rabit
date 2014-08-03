@@ -5,6 +5,12 @@
   text-transform: uppercase;
 }
 
+.index-title, .post-title, .page-title {
+  a {
+    color: $secondary;
+  }
+}
+
 .site-title-wrapper {
   display: table;
   margin: 0 auto;
@@ -30,8 +36,9 @@
   display: block;
 
   img {
-    height: 128px;
-    width: 128px;
+    $size: 96px;
+    height: $size;
+    width: $size;
     margin: 0;
   }
 }
