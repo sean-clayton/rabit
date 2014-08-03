@@ -5,9 +5,8 @@
  * @author ocodia
  */
 
-code, pre {
-	background: #272822;
-	border-radius: .3em;
+code, pre, code[class*="language-"],
+pre[class*="language-"] {
 	color: #f8f8f2;
 	text-shadow: 0 1px rgba(0,0,0,0.3);
 	font-family: Consolas, Monaco, 'Andale Mono', monospace;
