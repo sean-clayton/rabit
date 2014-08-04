@@ -1,14 +1,12 @@
 {{#contentFor "twitter-cards"}}
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="{{title}}">
-  <meta name="twitter:description" content="{{excerpt words="110"}}...">
-  <meta name="twitter:image:src" content="{{@blog.logo}}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="{{excerpt words="110"}}...">
+<meta name="twitter:image:src" content="{{@blog.logo}}">
 {{/contentFor}}
 
 {{#contentFor "open-graph"}}
-  <meta name="og:title" content="{{title}}">
-  <meta name="og:description" content="{{excerpt words="110"}}...">
-  <meta name="twitter:image:src" content="{{@blog.logo}}">
+<meta name="og:description" content="{{excerpt words="110"}}...">
+<meta name="twitter:image:src" content="{{@blog.logo}}">
 {{/contentFor}}
 
 <article class="post-container {{post_class}}">
