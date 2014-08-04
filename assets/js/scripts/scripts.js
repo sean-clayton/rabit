@@ -24,19 +24,19 @@ jQuery(function($) {
   var loading = false;
   var showIndex = false;
   var $ajaxContainer = $('#ajax-container');
-  var $latestPost = $('#latest-post');
+  // var $latestPost = $('#latest-post');
   var $postIndex = $('#post-index');
 
   // Initially hide the index and show the latest post
-  $latestPost.show();
-  $postIndex.hide();
+  // $latestPost.show();
+  $postIndex.show();
 
   // Show the index if the url has "page" in it (a simple
   // way of checking if we're on a paginated page.)
-  if (window.location.pathname.indexOf('page') === 1 || window.location.pathname.indexOf('tag') === 1) {
-    $latestPost.hide();
-    $postIndex.show();
-  }
+  // if (window.location.pathname.indexOf('page') === 1 || window.location.pathname.indexOf('tag') === 1) {
+  //   $latestPost.hide();
+  //   $postIndex.show();
+  // }
 
   // Check if history is enabled for the browser
   if ( ! History.enabled) {
@@ -58,15 +58,15 @@ jQuery(function($) {
       $('html, body').animate({'scrollTop': 0});
 
       $ajaxContainer.fadeOut(500, function() {
-        $latestPost = $newContent.filter('#latest-post');
+        // $latestPost = $newContent.filter('#latest-post');
         $postIndex = $newContent.filter('#post-index');
 
-        if (showIndex === true) {
-          $latestPost.hide();
-        } else {
-          $latestPost.show();
-          $postIndex.hide();
-        }
+        // if (showIndex === true) {
+        //   $latestPost.hide();
+        // } else {
+        //   $latestPost.show();
+        //   $postIndex.hide();
+        // }
 
         // Re run fitvid.js
         $newContent.fitVids();
@@ -107,29 +107,30 @@ jQuery(function($) {
         NProgress.start();
 
         History.pushState({}, title, url);
-      } else {
-        // Swap in the latest post or post index as needed
-        if ($(this).hasClass('js-show-index')) {
-          $('html, body').animate({'scrollTop': 0});
-
-          NProgress.start();
-
-          $latestPost.fadeOut(300, function() {
-            $postIndex.fadeIn(300);
-            NProgress.done();
-
-          });
-        } else {
-          $('html, body').animate({'scrollTop': 0});
-
-          NProgress.start();
-
-          $postIndex.fadeOut(300, function() {
-            $latestPost.fadeIn(300);
-            NProgress.done();
-          });
-        }
       }
+      // else {
+      //   // Swap in the latest post or post index as needed
+      //   if ($(this).hasClass('js-show-index')) {
+      //     $('html, body').animate({'scrollTop': 0});
+      //
+      //     NProgress.start();
+      //
+      //     $latestPost.fadeOut(300, function() {
+      //       $postIndex.fadeIn(300);
+      //       NProgress.done();
+      //
+      //     });
+      //   } else {
+      //     $('html, body').animate({'scrollTop': 0});
+      //
+      //     NProgress.start();
+      //
+      //     $postIndex.fadeOut(300, function() {
+      //       $latestPost.fadeIn(300);
+      //       NProgress.done();
+      //     });
+      //   }
+      // }
     }
   });
 });

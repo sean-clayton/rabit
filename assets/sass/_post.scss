@@ -27,18 +27,15 @@
   line-height: 1;
   margin: 25px 0 0;
   text-transform: uppercase;
-
-  &:after {
-    border-bottom: 1px solid darken($background, 10%);
-    content: "";
-    display: block;
-    margin: 2em auto 0;
-    width: 50%;
-  }
+}
+.post-date:after {
+  border-bottom: 1px solid darken($background, 10%);
+  content: "";
+  display: block;
+  margin: 2em auto 0;
 }
 
 .post-content {
-  margin: 4em 0 0 0;
 
   a:hover {
     border-bottom: 1px dotted $primary;
