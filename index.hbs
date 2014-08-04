@@ -5,7 +5,7 @@
 <meta name="twitter:title" content="{{@blog.title}}">
 <meta name="twitter:description" content="{{@blog.description}}">
 {{#if @blog.logo}}
-<meta name="twitter:image:src" content="{{@blog.logo}}">
+<meta name="twitter:image:src" content="{{@blog.url}}{{@blog.logo}}">
 {{/if}}
 {{/contentFor}}
 
@@ -13,7 +13,7 @@
 <meta property="og:type" content="website" />
 <meta name="og:description" content="{{@blog.description}}">
 {{#if @blog.logo}}
-<meta name="og:image" content="{{@blog.logo}}">
+<meta name="og:image" content="{{@blog.url}}{{@blog.logo}}">
 {{/if}}
 {{/contentFor}}
 

@@ -1,12 +1,12 @@
 {{#contentFor "twitter-cards"}}
 <meta name="twitter:card" content="summary">
 <meta name="twitter:description" content="{{excerpt words="110"}}...">
-<meta name="twitter:image:src" content="{{@blog.logo}}">
+<meta name="twitter:image:src" content="{{excerpt words="1"}}">
 {{/contentFor}}
 
 {{#contentFor "open-graph"}}
 <meta name="og:description" content="{{excerpt words="110"}}...">
-<meta name="twitter:image:src" content="{{@blog.logo}}">
+<meta name="og:image" content="{{excerpt words="1"}}">
 {{/contentFor}}
 
 <article class="post-container {{post_class}}">
