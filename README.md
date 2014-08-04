@@ -2,7 +2,20 @@
 
 ### About
 
-Rabit is a light and quick theme for [Ghost](http://github.com/tryghost/ghost/). It was made for [my blog](http://blog.skulbuny.com).
+rabit is a light and quick theme for [Ghost](http://github.com/tryghost/ghost/). It was made for [my blog](http://blog.skulbuny.com).
+
+### Customizing
+
+This theme is extremely customizable. All of the JavaScript is neatly laid out inside of the [js folder](assets/js), every handlebars file is compromised of multiple [partials](partials), and the Sass has been completely modularized inside of [it's folder](assets/sass). There are some requirements, though, if you are to customize the theme.
+
+### Requirements
+
+- [Node.js](http://nodejs.org/)
+- [NPM](http://nodejs.org/)
+  - For Node.js and NPM, there are various tutorials out there on how to install these on your computer. The method is different for each OS/Distro, so I won't go over that.
+- [Grunt](http://gruntjs.com/)
+  - Run `npm install -g grunt-cli` to install Grunt. Easy as pie!
+  - If you can't install this without using `sudo`, you installed Node/NPM incorrectly!
 
 ### Usage
 

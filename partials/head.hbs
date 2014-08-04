@@ -10,6 +10,18 @@
 <meta name="MobileOptimized" content="320" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+{{! Twitter Cards }}
+<meta name="twitter:title" content="{{meta_title}}">
+<meta name="twitter:site" content="@_seanclayton">
+<meta name="twitter:creator" content="@_seanclayton">
+<meta name="twitter:domain" content="{{@blog.url}}"/>
+{{{block "twitter-cards"}}}
+
+{{! Open Graph }}
+<meta name="og:title" content="{{meta_title}}">
+{{{block "open-graph"}}}
+
+
 {{! Styles }}
 <link prefetch rel="stylesheet" type="text/css" href="{{asset "css/style.min.css"}}" />
 
