@@ -6,10 +6,12 @@
 </footer>
 
 {{! Ghost outputs important scripts and data with this tag }}
-{{ghost_foot}}
+{{!-- {{ghost_foot}} --}}
 
 {{! All other scripts }}
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script type="text/javascript" src="{{asset "js/rabit.min.js"}}"></script>
 {{> google-fonts}}
 {{> ga}}
 {{> prettyprint}}
+<link prefetch href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
