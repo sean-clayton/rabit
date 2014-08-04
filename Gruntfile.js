@@ -37,7 +37,7 @@ module.exports = function(grunt) {
         },
         options: {
           compress: true,
-          mangle: false, // When set to false, it prevents variable/function name changes
+          mangle: true, // When set to false, it prevents variable/function name changes
           banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' + '<%= grunt.template.today("yyyy-mm-dd") %> */\n', // Adds line at the end of the outputted file. The above will output something like /*! rabit - v1.0.0 - 2014-1-1 */
           footer: '\n// Written by <%= pkg.author %>'
         }
