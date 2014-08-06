@@ -1,0 +1,13 @@
+/* TEAM */
+Web Developer: Sean Clayton
+Site: http://blog.skulbuny.com, sean@skulbuny.com
+Twitter: @_seanclayton
+Location: Louisville, Kentucky, USA
+
+/* THANKS */
+Name: Ghost, Ghostwriter
+
+/* SITE */
+Standards: HTML5, CSS3
+Components: jQuery, Google Fonts, NProgress, HighlightJS
+Software: Atom, Grunt
