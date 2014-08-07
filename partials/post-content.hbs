@@ -10,12 +10,12 @@
 {{/contentFor}}
 
 {{#if @blog.logo}}{{else}}
-<a class="return-button" href="{{@blog.url}}" title="Return Home"><i class="fa fa-home"></i></a>
+<a class="return-button" data-instant href="{{@blog.url}}" title="Return Home"><i class="fa fa-home"></i></a>
 {{/if}}
 
 <article class="post-container {{post_class}}">
   <header class="post-header">
-    <h2 class="post-title"><a href="{{url}}">{{title}}</a></h2>
+    <h2 class="post-title"><a data-instant href="{{url}}">{{title}}</a></h2>
 
     <p class="post-date"><time datetime="{{published_at}}">Published {{date published_at timeago="true"}}</time></p>
   </header>
