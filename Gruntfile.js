@@ -15,7 +15,7 @@ module.exports = function(grunt) {
         tasks: ['sass'] // Runs the sass task below if there is a change
       },
       js: {
-        files: ['assets/js/scripts/*.js', 'package.json'], // Watches for js file changes in the scripts directory and for package.json
+        files: ['assets/js/scripts/**/*.js', 'package.json'], // Watches for js file changes in the scripts directory and for package.json
         tasks: ['uglify'] // Runs the uglify task below if there is a change
       }
     },
@@ -30,14 +30,24 @@ module.exports = function(grunt) {
         }
       }
     },
+    concat: {
+      dist: {
+        files: {
+          'assets/js/rabit.js': ['assets/js/scripts/plugins/*.js', 'assets/js/scripts/scripts.js']
+        },
+        options: {
+          sourceMap: true
+        }
+      }
+    },
     uglify: {
       dist: {
         files: {
-          'assets/js/rabit.min.js': ['assets/js/scripts/*.js'] // Uglifies all JavaScript files inside of the assets/js/scripts folder
+          'assets/js/rabit.min.js': ['assets/js/rabit.js'] // Uglifies the concatenated JS file
         },
         options: {
           compress: true,
-          mangle: true, // When set to false, it prevents variable/function name changes
+          mangle: false, // When set to false, it prevents variable/function name changes
           banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' + '<%= grunt.template.today("yyyy-mm-dd") %> */\n', // Adds line at the end of the outputted file. The above will output something like /*! rabit - v1.0.0 - 2014-1-1 */
           footer: '\n// Written by <%= pkg.author %>'
         }
@@ -48,11 +58,12 @@ module.exports = function(grunt) {
   // Load Grunt plugins
 
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-sass');
 
   // Create Grunt tasks (running 'grunt' in the command line will run whichever task is titled 'default')
 
-  grunt.registerTask('default', ['uglify', 'sass', 'watch']); // This is the default tasks. There are no other tasks because this Gruntfile only does one thing and one thing only.
+  grunt.registerTask('default', ['concat', 'uglify', 'sass', 'watch']); // This is the default tasks. There are no other tasks because this Gruntfile only does one thing and one thing only.
 
 };

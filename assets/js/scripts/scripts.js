@@ -1,10 +1,6 @@
 jQuery(function($) {
 
-  $(function() {
-    InstantClick.init(true);
-  });
-
-  $(".post-content").fitVids();
+  InstantClick.init(50, true);
 
   $('.js-jump-top').on('click', function(e) {
     e.preventDefault();
