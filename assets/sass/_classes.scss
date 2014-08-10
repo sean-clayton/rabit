@@ -7,9 +7,9 @@
 
 #wrapper {
   height: auto;
-    min-height: 100%;
   /* This must be the same as the height of the footer */
   margin-bottom: -($footer-height);
+  @include flex(1);
 
   &:after {
     content: "";

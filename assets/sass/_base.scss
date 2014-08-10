@@ -1,7 +1,10 @@
 html, body {
   background: $background;
-  height: 100%;
+  min-height: 100vh;
   font-size: modular-scale($base-font-size, 0, $major-third);
+
+  @include display(flex);
+  @include flex-direction(column);
 }
 
 body {
