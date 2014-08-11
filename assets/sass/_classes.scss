@@ -6,17 +6,7 @@
 }
 
 #wrapper {
-  height: auto;
-  /* This must be the same as the height of the footer */
-  margin-bottom: -($footer-height);
   @include flex(1);
-
-  &:after {
-    content: "";
-    display: block;
-    /* This must be the same as the height of the footer */
-    height: $footer-height;
-  }
 }
 
 .button {
