@@ -25,7 +25,7 @@
   <ol class="post-list">
     {{#foreach posts}}
       <li class="post-stub {{post_class}}" >
-        <a data-instant title="{{title}} | {{@blog.title}}" href="{{url}}">
+        <a data-instant itemprop="url" title="{{title}} | {{@blog.title}}" href="{{url}}">
           <h4 class="post-stub-title">{{title}}</h4>
 
           <time class="post-stub-date" datetime="{{published_at}}">Published {{date timeago="true"}}</time>
