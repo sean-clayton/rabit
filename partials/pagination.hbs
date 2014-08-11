@@ -1,0 +1,10 @@
+<div class="post-navigation">
+	<nav class="pagination" role="pagination">
+		{{#if prev}}
+			<a data-instant class="newer-posts nav-button" href="{{page_url prev}}"><i class="fa fa-angle-left"></i></a>
+		{{/if}}
+		{{#if next}}
+			<a data-instant class="older-posts nav-button" href="{{page_url next}}"><i class="fa fa-angle-right"></i></a>
+		{{/if}}
+	</nav>
+</div>
