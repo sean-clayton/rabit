@@ -16,7 +16,16 @@ module.exports = function(grunt) {
       },
       js: {
         files: ['assets/js/scripts/**/*.js', 'package.json'], // Watches for js file changes in the scripts directory and for package.json
-        tasks: ['concat', 'uglify'] // Runs the uglify task below if there is a change
+        tasks: ['concat', 'uglify'], // Runs the uglify task below if there is a change
+        options: {
+          livereload: true
+        }
+      },
+      css: {
+        files: ['assets/css/*.css'],
+        options: {
+          livereload: true
+        }
       }
     },
     sass: {
