@@ -26,6 +26,12 @@ module.exports = function(grunt) {
         options: {
           livereload: true
         }
+      },
+      hbs: {
+        files: ['**/*.hbs'],
+        options: {
+          livereload: true
+        }
       }
     },
     sass: {
