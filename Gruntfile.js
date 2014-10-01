@@ -22,7 +22,7 @@ module.exports = function(grunt) {
         }
       },
       css: {
-        files: ['assets/css/*.css'],
+        files: ['assets/css/*.css', 'assets/components/rabit/**/*.css'], // Getting ready for polymer
         options: {
           livereload: true
         }
