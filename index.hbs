@@ -1,21 +1,34 @@
 {{!< default}}
 
-<div id="latest-post" class="container">
-  {{#foreach posts}}
-    {{#if @first}}
-      {{> post-content}}
-    {{/if}}
-  {{/foreach}}
-</div>
+{{#contentFor "twitter-cards"}}
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="{{@blog.description}}">
+{{#if @blog.logo}}
+<meta name="twitter:image:src" content="{{@blog.url}}{{@blog.logo}}">
+{{/if}}
+{{/contentFor}}
+
+{{#contentFor "open-graph"}}
+<meta property="og:type" content="website" />
+<meta name="og:description" content="{{@blog.description}}">
+{{#if @blog.logo}}
+<meta name="og:image" content="{{@blog.url}}{{@blog.logo}}">
+{{/if}}
+{{/contentFor}}
+
+<header class="index-header">
+  <h1 class="index-title" data-instant><a href="{{url}}">{{@blog.title}}</a></h1>
+  <h2 class="blog-description" data-instant>{{@blog.description}}</h2>
+</header>
 
 <div id="post-index" class="container">
   <ol class="post-list">
     {{#foreach posts}}
       <li class="post-stub {{post_class}}" >
-        <a class="js-ajax-link"  title="{{title}} | {{@blog.title}}" href="{{url}}">
+        <a data-instant itemprop="url" title="{{title}} | {{@blog.title}}" href="{{url}}">
           <h4 class="post-stub-title">{{title}}</h4>
 
-          <time class="post-stub-date" datetime="{{published_at}}">Published {{date format="MMMM Do YYYY"}}</time>
+          <time class="post-stub-date" datetime="{{published_at}}">Published {{date timeago="true"}}</time>
 
           {{#if featured}}
             <span class="post-stub-tag">Featured</span>
@@ -24,8 +37,4 @@
       </li>
     {{/foreach}}
   </ol>
-
-  <div class="post-navigation">
-    {{pagination}}
-  </div>
 </div>

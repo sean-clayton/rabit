@@ -1,0 +1,133 @@
+html, body {
+  background: $background;
+  min-height: 100vh;
+  font-size: modular-scale($base-font-size, 0, $major-third);
+
+  @include display(flex);
+  @include flex-direction(column);
+}
+
+body {
+  color: #424242;
+  font-family: $copy-font, arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $special-font, "Helvetica Neue Condensed", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-weight: 700;
+  margin: 0 0 .75em 0;
+  text-transform: none;
+  text-shadow: 0 1px 0 rgba(white, 1);
+}
+
+h1 { font-size: 3em; font-weight: 400; }
+h2 { font-size: 2.5em; font-weight: 400; }
+h3 { font-size: 2.25em; font-weight: 400; margin-bottom: 20px; }
+h4 { font-size: 2em; margin-bottom: 18px; }
+h5 { font-size: 1.75em; margin-bottom: 15px; }
+h6 { font-size: 1.5em; margin-bottom: 12px; }
+
+p {
+  line-height: 1.8;
+  margin: 0 0 30px;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style-position: inside;
+  line-height: 1.8;
+  margin: 0 0 40px;
+  padding: 0;
+
+  ul, ol { margin: 10px 0 0 20px; }
+
+  li {
+    margin: 0 0 10px;
+
+    &:last-of-type { margin-bottom: 0; }
+  }
+}
+
+blockquote {
+  border-left: 1px dotted $secondary;
+  margin: 40px 0;
+  padding: 5px 30px;
+
+  p {
+    color: #AEADAD;
+    display: block;
+    font-style: italic;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+img {
+  display: block;
+  margin: 40px 0;
+  width: auto;
+  max-width: 100%;
+}
+
+pre, code {
+  font-family: $mono-font, Menlo, Monaco, Consolas, monospace;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px dotted #303030;
+  margin: 45px 0;
+}
+
+table {
+  margin-bottom:40px;
+  width: 100%;
+
+  tbody > tr:nth-child(odd) > td,
+  tbody > tr:nth-child(odd) > th {
+    background-color: #f7f7f3;
+  }
+
+  th {
+    padding: 0 10px 10px;
+    text-align: left;
+  }
+
+  td { padding: 10px; }
+
+  tr { border-bottom: 1px dotted #AEADAD; }
+}
+
+.selection {
+  display: block;
+}
+
+::selection {
+  @extend .selection;
+  background: rgba($primary, .75);
+}
+
+::-moz-selection {
+  @extend .selection;
+  background: rgba($primary, .75);
+}
+
+.fluid-width-video-wrapper { margin-bottom: 40px; }
+
+.hidden {
+  text-indent: -9999px;
+  visibility: hidden;
+  display: none;
+}
+
+.clearfix {
+  &:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

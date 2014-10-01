@@ -1,8 +1,22 @@
+{{#contentFor "twitter-cards"}}
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="{{excerpt words="110"}}...">
+<meta name="twitter:image:src" content="{{@blog.url}}{{image}}">
+{{/contentFor}}
+
+{{#contentFor "open-graph"}}
+<meta name="og:description" content="{{excerpt words="110"}}...">
+<meta name="og:image" content="{{excerpt words="1"}}">
+{{/contentFor}}
+
+{{#if @blog.logo}}{{else}}
+<a class="return-button" data-instant href="{{@blog.url}}" title="Return Home"><i class="fa fa-home"></i></a>
+{{/if}}
+
 <article class="post-container {{post_class}}">
   <header class="post-header">
-    <h1 class="post-title">{{title}}</h1>
-
-    <p class="post-date"><time datetime="{{published_at}}">Published {{date format="MMMM Do YYYY"}}</time></p>
+    <h2 class="post-title"><a data-instant href="{{url}}">{{title}}</a></h2>
+    <p class="post-date"><time datetime="{{published_at}}">Published {{date published_at timeago="true"}}</time></p>
   </header>
 
   <div class="post-content clearfix">
@@ -11,7 +25,10 @@
 
   <footer class="post-footer clearfix">
     {{#if tags}}
-      <p class="post-tags"><span>Tagged:</span> {{tags}}</p>
+      <p class="tags-label">Tags</p>
+      <section class="tags">
+        {{tags separator=""}}
+      </section>
     {{/if}}
 
     <div class="share">

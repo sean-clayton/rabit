@@ -1,0 +1,46 @@
+@media only screen and (max-width: 800px) {
+  .post-stub-tag { display: none; }
+}
+
+@media only screen and (max-width: 600px) {
+  .site-nav-item {
+    display: block;
+    margin: 15px 0;
+  }
+
+  .post-stub-title { display: block; }
+
+  .post-stub-date:before {
+    content: "";
+    display: block;
+  }
+
+  .post-container,
+  .post-list {
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+
+  .post-tags { width: 100%; }
+
+  .share {
+    float: left;
+    margin-top: 20px;
+
+    a {
+      margin: 0 5px 0 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .post-title { font-size: 32px; }
+  .post-content {
+    margin: 2em 0 0 0;
+  }
+  .post-container,
+  .post-list {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}

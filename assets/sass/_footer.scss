@@ -1,0 +1,39 @@
+.footer {
+  box-sizing: border-box;
+  background: $secondary;
+  color: #D3D3D3;
+  text-shadow: 0 1px 0 rgba(black, .25);
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #656565;
+  padding: 0 0 1em 0;
+
+  .site-title-wrapper { margin: 80px auto 35px; }
+
+  .site-title a:hover,
+  .button-square:hover {
+    background: #121212;
+  }
+
+  .button-jump-top {
+    display: inline-block;
+    float: none;
+    font-size: 20px;
+    height: 27px;
+    width: 27px;
+    margin: 0 0 1em 0;
+  }
+
+  .button-social {
+    margin: 1em auto 0 auto;
+  }
+}
+
+.footer-copyright {
+  margin: 0;
+}
+
+.footer-info {
+  margin: 0;
+}
