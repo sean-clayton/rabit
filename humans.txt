@@ -1,6 +1,7 @@
 /* TEAM */
-Web Developer: Sean Clayton
-Site: http://blog.skulbuny.com, sean@skulbuny.com
+Developer: Sean Clayton
+Designer: Sean Clayton
+Site: http://blog.sean-clayton.com, clayton.sean@gmail.com
 Twitter: @_seanclayton
 Location: Louisville, Kentucky, USA
 

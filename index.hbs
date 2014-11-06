@@ -1,21 +1,5 @@
 {{!< default}}
 
-{{#contentFor "twitter-cards"}}
-<meta name="twitter:card" content="summary">
-<meta name="twitter:description" content="{{@blog.description}}">
-{{#if @blog.logo}}
-<meta name="twitter:image:src" content="{{@blog.url}}{{@blog.logo}}">
-{{/if}}
-{{/contentFor}}
-
-{{#contentFor "open-graph"}}
-<meta property="og:type" content="website" />
-<meta name="og:description" content="{{@blog.description}}">
-{{#if @blog.logo}}
-<meta name="og:image" content="{{@blog.url}}{{@blog.logo}}">
-{{/if}}
-{{/contentFor}}
-
 <header class="index-header">
   <h1 class="index-title" data-instant><a href="{{url}}">{{@blog.title}}</a></h1>
   <h2 class="blog-description" data-instant>{{@blog.description}}</h2>

@@ -23,6 +23,10 @@ This theme is extremely customizable. All of the JavaScript is neatly laid out i
 
 `grunt` - Runs all tasks required to make changes outlined in [the Gruntfile](Gruntfile.js).
 
+### Issues
+
+[Here](http://code.sean-clayton.com/sean/rabit/issues) is a list of known issues/enhancements. If you want to submit an issue, use [Github's issue tracker](https://github.com/sean-clayton/rabit/issues).
+
 ### Credit
 
 This theme is a highly-modified fork of [Ghostwriter](https://github.com/roryg/ghostwriter).
