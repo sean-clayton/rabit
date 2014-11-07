@@ -27,12 +27,11 @@
   }
 
   &.has-image {
-    background-size: cover;
-    background-size: 110%;
+    background-size: auto 110%;
     background-position: center center;
 
     &:hover {
-      background-size: 100%
+      background-size: auto 100%
     }
 
     a * {
