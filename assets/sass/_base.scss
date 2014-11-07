@@ -2,7 +2,7 @@ html, body {
   background: $background;
   min-height: 100vh;
   font-size: modular-scale($base-font-size, 0, $major-third);
-  text-rendering: optimizelegibility;
+  text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
 
   @include display(flex);
@@ -15,7 +15,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $special-font, "Helvetica Neue Condensed", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: $special-font, "DIN", "Helvetica Neue Condensed", "Helvetica Neue", "Helvetica", Arial, sans-serif;
   font-weight: 300;
   margin: 0 0 .75em 0;
   text-transform: none;
@@ -31,7 +31,7 @@ h6 { font-size: 1.5em; margin-bottom: 12px; }
 
 p {
   line-height: 1.8;
-  margin: 0 0 30px;
+  margin: 0 0 1.5rem;
 }
 
 a {
@@ -70,7 +70,7 @@ blockquote {
 
 img {
   display: block;
-  margin: 40px 0;
+  margin: 2.5rem 0;
   width: auto;
   max-width: 100%;
 }

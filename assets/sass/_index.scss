@@ -4,7 +4,7 @@
 }
 
 .post-stub {
-  @include transition(140ms ease all);
+  @include transition(240ms ease all);
   line-height: 1;
   margin: 0;
   position: relative;
@@ -12,7 +12,7 @@
   &:first-child { padding-top: 0; }
 
   a {
-    @include transition(140ms ease all);
+    @include transition(240ms ease all);
     background: rgba(white, .5);
     display: block;
     color: $blak;
@@ -29,10 +29,11 @@
 
   &.has-image {
     background-size: cover;
+    background-size: 110%;
     background-position: center center;
 
     &:hover {
-      background-position: center 55%;
+      background-size: 100%
     }
 
     a * {
@@ -43,7 +44,7 @@
       background-color: rgba(black, .5);
 
       &:hover {
-        background-color: rgba($primary, .8);
+        background-color: rgba(black, .8);
       }
     }
   }
