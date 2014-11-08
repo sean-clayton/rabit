@@ -13,13 +13,11 @@
 
   a {
     @include transition(240ms ease all);
-    background: rgba(white, .5);
     display: block;
     color: $blak;
     padding: 2.5rem 1rem;
 
     &:hover {
-      background: white;
       color: $primary;
 
       .post-stub-tag { background: $primary; }
@@ -42,6 +40,12 @@
       &:hover {
         background-color: rgba(black, .5);
       }
+    }
+  }
+
+  &:not(.has-image) {
+    a {
+      @include linear-gradient(to top left, lighten($background, 2%), white);
     }
   }
 }
