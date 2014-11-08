@@ -80,9 +80,32 @@ pre, code {
 }
 
 hr {
-  border: none;
-  border-bottom: 1px dotted #303030;
-  margin: 45px 0;
+  border: 0;
+  height: 1px;
+  position: relative;
+  margin: 3rem 0;
+
+  @include background-image(radial-gradient(ellipse at center, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 75%));
+
+  &:before {
+    top: -0.5rem;
+    height: 1rem;
+
+    @include background-image(radial-gradient(ellipse at center, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 75%));
+  }
+
+  &:after {
+    content:'';
+    height: 0.5rem;   // half the height of :before
+    top: 1px; // height of hr
+    background: $background;
+  }
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+  }
 }
 
 table {

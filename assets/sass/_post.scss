@@ -3,6 +3,10 @@
 .post-container { margin: 0 40px; }
 
 .post-header, .index-header {
+  @include display(flex);
+  @include flex-direction(column);
+  @include justify-content(center);
+  height: 25vh;
   text-align: center;
   text-transform: uppercase;
 }
@@ -29,10 +33,10 @@
 
 .post-date {
   color: #AEADAD;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: .8em;
+  font-weight: 300;
   line-height: 1;
-  margin: 25px 0 0;
+  margin: 1rem 0 0;
   text-transform: uppercase;
 }
 //.post-date:after {
@@ -124,12 +128,16 @@
 .page-number { display: none; }
 
 .hero {
+  @include display(flex);
+  @include align-items(center);
+  @include justify-content(center);
+  @include flex-direction(column);
   background-size: cover;
   background-position: center center;
   color: white;
   text-shadow: 0 1px 0 rgba(black, 1);
   width: 100%;
-  padding: 35vh 0;
+  height: 80vh;
 
   h2 {
     font-size: 5em;
