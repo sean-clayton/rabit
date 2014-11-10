@@ -1,20 +1,20 @@
-.post-title
-
-.post-container { margin: 0 40px; }
+.post-container { margin: 0 2rem; }
 
 .post-header, .index-header {
   @include display(flex);
   @include flex-direction(column);
   @include justify-content(center);
-  height: 25vh;
+  min-height: 25vh;
   text-align: center;
   text-transform: uppercase;
+  padding: 0 0 0 0;
 }
 
 .post-title {
   font-size: 4em;
   font-style: italic;
   font-weight: 100;
+  padding: 4rem 0 0 0;
 }
 
 .post-title,
@@ -137,6 +137,7 @@
     font-size: 5em;
     font-weight: 100;
     font-style: italic;
+    padding: 0;
   }
 
   a {
@@ -162,4 +163,3 @@
     z-index:0;
   }
 }
-
