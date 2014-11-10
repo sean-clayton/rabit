@@ -2,7 +2,7 @@
 
 ### About
 
-rabit is a light and quick theme for [Ghost](http://github.com/tryghost/ghost/). It was made for [my blog](http://blog.sean-clayton.com).
+rabit is a light and quick theme for [Ghost](http://github.com/tryghost/ghost/). It was made for [my blog](http://seanclayton.me).
 
 ### Customizing
 
@@ -25,7 +25,7 @@ This theme is extremely customizable. All of the JavaScript is neatly laid out i
 
 ### Issues
 
-[Here](http://code.sean-clayton.com/sean/rabit/issues) is a list of known issues/enhancements. If you want to submit an issue, use [Github's issue tracker](https://github.com/sean-clayton/rabit/issues).
+[Here](http://git.seanclayton.me/sean/rabit/issues) is a list of known issues/enhancements. If you want to submit an issue, use [Github's issue tracker](https://github.com/sean-clayton/rabit/issues).
 
 ### Credit
 
