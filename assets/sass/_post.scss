@@ -1,52 +1,62 @@
-#latest-post { display: none; }
-
-.post-container { margin: 0 40px; }
+.post-container { margin: 0 2rem; }
 
 .post-header, .index-header {
+  @include display(flex);
+  @include flex-direction(column);
+  @include justify-content(center);
+  min-height: 25vh;
   text-align: center;
   text-transform: uppercase;
+  padding: 0 0 0 0;
+}
+
+.post-title {
+  font-size: 4em;
+  font-style: italic;
+  font-weight: 100;
+  padding: 4rem 0 0 0;
 }
 
 .post-title,
 .page-title,
 .index-title {
   color: $secondary;
-  font-weight: 400;
-  margin: 15px 0;
+  margin: 0;
   text-align: center;
   text-transform: uppercase;
 }
 
-.page-title { margin: 15px 40px; }
+.page-title {
+  font-weight: 100;
+  margin: 1rem 2.5rem;
+}
 
 .post-date {
   color: #AEADAD;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: .8em;
+  font-weight: 300;
   line-height: 1;
-  margin: 25px 0 0;
+  margin: 1rem 0 0;
   text-transform: uppercase;
-}
-.post-date:after {
-  border-bottom: 1px solid darken($background, 10%);
-  content: "";
-  display: block;
-  margin: 2em auto 0;
 }
 
 .post-content {
   font-size: 1em;
-  margin: 2em 0 0 0;
+  margin: 2em auto 0 auto;
 
-  a:hover {
-    border-bottom: 1px dotted $primary;
-    padding: 0 0 2px;
+  a {
+    text-shadow: 0 1px 0 rgba(white, 1);
+
+    &:hover {
+      border-bottom: 1px dotted $primary;
+      padding: 0 0 2px;
+    }
   }
 
   &:last-child { margin-bottom: 0; }
 }
 
-.post-footer { margin: 0 0 3em 0; }
+.post-footer { margin: 0 auto 3em auto; }
 
 .tags, .share {
   color: #AEADAD;
@@ -110,3 +120,46 @@
 }
 
 .page-number { display: none; }
+
+.hero {
+  @include display(flex);
+  @include align-items(center);
+  @include justify-content(center);
+  @include flex-direction(column);
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  text-shadow: 0 1px 0 rgba(black, 1);
+  width: 100%;
+  height: 80vh;
+
+  h2 {
+    font-size: 5em;
+    font-weight: 100;
+    font-style: italic;
+    padding: 0;
+  }
+
+  a {
+    color: white;
+    text-shadow: 0 1px 0 rgba(black, 1);
+  }
+
+  * { position: relative; }
+}
+
+.hero-overlay {
+  position: relative;
+
+  &:before {
+    background-color: rgba(black, .8);
+    position: absolute;
+    content:" ";
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display: block;
+    z-index:0;
+  }
+}

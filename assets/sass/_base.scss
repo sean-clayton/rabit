@@ -2,34 +2,36 @@ html, body {
   background: $background;
   min-height: 100vh;
   font-size: modular-scale($base-font-size, 0, $major-third);
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
 
   @include display(flex);
   @include flex-direction(column);
 }
 
 body {
-  color: #424242;
+  color: $blak;
   font-family: $copy-font, arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $special-font, "Helvetica Neue Condensed", "Helvetica Neue", "Helvetica", Arial, sans-serif;
-  font-weight: 700;
+  font-family: $special-font, "DIN", "Helvetica Neue Condensed", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-weight: 300;
   margin: 0 0 .75em 0;
   text-transform: none;
   text-shadow: 0 1px 0 rgba(white, 1);
 }
 
-h1 { font-size: 3em; font-weight: 400; }
-h2 { font-size: 2.5em; font-weight: 400; }
-h3 { font-size: 2.25em; font-weight: 400; margin-bottom: 20px; }
-h4 { font-size: 2em; margin-bottom: 18px; }
-h5 { font-size: 1.75em; margin-bottom: 15px; }
-h6 { font-size: 1.5em; margin-bottom: 12px; }
+h1 { font-size: 3em; font-weight: 100; }
+h2 { font-size: 2.5em; font-weight: 300; }
+h3 { font-size: 2.25em; font-weight: 300; margin-bottom: 1.8em; }
+h4 { font-size: 2em; margin-bottom: 1em; }
+h5 { font-size: 1.75em; margin-bottom: .8em; }
+h6 { font-size: 1.5em; margin-bottom: .75em; }
 
 p {
   line-height: 1.8;
-  margin: 0 0 30px;
+  margin: 0 0 1.5rem;
 }
 
 a {
@@ -39,14 +41,14 @@ a {
 
 ul, ol {
   list-style-position: inside;
-  line-height: 1.8;
-  margin: 0 0 40px;
+  line-height: 1.5;
+  margin: 0 0 2rem;
   padding: 0;
 
-  ul, ol { margin: 10px 0 0 20px; }
+  ul, ol { margin: .5rem 0 0 1rem; }
 
   li {
-    margin: 0 0 10px;
+    margin: 0 0 .5rem;
 
     &:last-of-type { margin-bottom: 0; }
   }
@@ -54,11 +56,11 @@ ul, ol {
 
 blockquote {
   border-left: 1px dotted $secondary;
-  margin: 40px 0;
-  padding: 5px 30px;
+  margin: 3rem 0;
+  padding: .5rem 2rem;
 
   p {
-    color: #AEADAD;
+    color: lighten($blak, 10%);
     display: block;
     font-style: italic;
     margin: 0;
@@ -68,7 +70,7 @@ blockquote {
 
 img {
   display: block;
-  margin: 40px 0;
+  margin: 2.5rem 0;
   width: auto;
   max-width: 100%;
 }
@@ -78,9 +80,32 @@ pre, code {
 }
 
 hr {
-  border: none;
-  border-bottom: 1px dotted #303030;
-  margin: 45px 0;
+  border: 0;
+  height: 1px;
+  position: relative;
+  margin: 3rem 0;
+
+  @include background-image(radial-gradient(ellipse at center, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 75%));
+
+  &:before {
+    top: -0.5rem;
+    height: 1rem;
+
+    @include background-image(radial-gradient(ellipse at center, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 75%));
+  }
+
+  &:after {
+    content:'';
+    height: 0.5rem;   // half the height of :before
+    top: 1px; // height of hr
+    background: $background;
+  }
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+  }
 }
 
 table {

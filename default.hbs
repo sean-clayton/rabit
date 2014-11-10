@@ -3,18 +3,9 @@
 <head>
   {{> head}}
 </head>
-<body unresolved class="{{body_class}}">
-
-  <div id="wrapper">
-    <header class="site-header">
-      <div class="container">
-        {{> header}}
-      </div>
-    </header>
-
-    <div>
-      {{{body}}}
-    </div>
+<body class="{{body_class}}">
+  <div id="blog">
+{{{body}}}
   </div>
   {{#is "index"}}
     {{pagination}}

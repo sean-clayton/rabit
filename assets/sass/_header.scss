@@ -1,19 +1,23 @@
+.blog-logo {
+  padding: 0 0 1rem 0;
+}
+
 .site-header {
-  padding: 2em 0 0;
+  padding: 0;
   overflow: auto;
   text-align: center;
   text-transform: uppercase;
 }
 
+.index-title {
+  font-size: 4em;
+  font-weight: 100;
+  font-style: italic;
+}
+
 .index-title, .post-title, .page-title {
   a {
     color: $secondary;
-  }
-}
-
-.post-title {
-  a {
-    font-weight: 700;
   }
 }
 

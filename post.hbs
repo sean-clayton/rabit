@@ -1,7 +1,7 @@
 {{!< default}}
 
-<div class="container">
-  {{#post}}
-    {{> post-content}}
-  {{/post}}
+{{#post}}
+<div class="{{#unless image}}container{{/unless}}">
+{{> post-content}}
 </div>
+{{/post}}
