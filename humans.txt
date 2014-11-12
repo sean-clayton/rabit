@@ -11,4 +11,4 @@ Name: Ghost, Ghostwriter
 /* SITE */
 Standards: HTML5, CSS3
 Components: jQuery, Google Fonts, NProgress, HighlightJS
-Software: Atom, Grunt
+Software: Atom, Grunt, JetBrains WebStorm, Git
