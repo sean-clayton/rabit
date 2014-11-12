@@ -1,7 +1,7 @@
 /* TEAM */
 Developer: Sean Clayton
 Designer: Sean Clayton
-Site: http://blog.sean-clayton.com, clayton.sean@gmail.com
+Site: https://seanclayton.me, clayton.sean@gmail.com
 Twitter: @_seanclayton
 Location: Louisville, Kentucky, USA
 
