@@ -1,7 +1,7 @@
 /* TEAM */
 Developer: Sean Clayton
 Designer: Sean Clayton
-Site: http://blog.sean-clayton.com, clayton.sean@gmail.com
+Site: https://seanclayton.me, clayton.sean@gmail.com
 Twitter: @_seanclayton
 Location: Louisville, Kentucky, USA
 
@@ -11,4 +11,4 @@ Name: Ghost, Ghostwriter
 /* SITE */
 Standards: HTML5, CSS3
 Components: jQuery, Google Fonts, NProgress, HighlightJS
-Software: Atom, Grunt
+Software: Atom, Grunt, JetBrains WebStorm, Git

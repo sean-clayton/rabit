@@ -12,6 +12,7 @@ $fire: #f50;
 $sponge: #ffb;
 $innocent: #f9d;
 $wite: #f0f0f0;
+$blood: #d11;
 $blak: #303030;
 $darkGray: lighten($blak, 25%);
 $lightGray: darken($wite, 25%);
@@ -25,6 +26,6 @@ $special-font: "RobotoDraft";
 $mono-font: "Source Code Pro";
 
 $base-font-size: 18px;
-$code-font-size: 16px;
+$code-font-size: .8em;
 
 $font-smoothing: false;

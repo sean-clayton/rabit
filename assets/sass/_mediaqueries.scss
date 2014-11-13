@@ -4,6 +4,11 @@
 
 @media (max-width: 600px) {
 
+  html, body {
+    $base-font-size: 16px;
+    font-size: modular-scale($base-font-size, 0, $major-third);
+  }
+
   h1 { font-size: 2.5em; font-weight: 100; }
   h2 { font-size: 2em; font-weight: 300; }
   h3 { font-size: 1.75em; font-weight: 300; margin-bottom: 1.8em; }
@@ -50,10 +55,16 @@
 }
 
 @media (max-width: 400px) {
+
+  html, body {
+    $base-font-size: 14px;
+    font-size: modular-scale($base-font-size, 0, $major-third);
+  }
+
   .post-content {
     margin: 2em 0 0 0;
-    padding: 0 1em;
   }
+
   .post-list {
     margin-right: 0;
     margin-left: 0;

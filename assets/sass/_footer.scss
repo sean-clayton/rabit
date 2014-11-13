@@ -1,13 +1,13 @@
 .footer {
   box-sizing: border-box;
   background: $secondary;
-  color: #D3D3D3;
+  color: white;
   text-shadow: 0 1px 0 rgba(black, .25);
-  font-size: 14px;
+  font-size: .7em;
+  -webkit-font-smoothing: antialiased;
   text-align: center;
   text-transform: uppercase;
-  color: #656565;
-  padding: 0 0 1em 0;
+  padding: 0 0 1rem 0;
 
   .site-title-wrapper { margin: 80px auto 35px; }
 
@@ -20,9 +20,15 @@
     display: inline-block;
     float: none;
     font-size: 20px;
-    height: 27px;
-    width: 27px;
-    margin: 0 0 1em 0;
+    margin: 0 0 1rem 0;
+    padding: .5rem 1rem;
+    @include transition(160ms ease all);
+
+    &:hover {
+      background: $wite;
+      color: $primary;
+      text-shadow: 0 1px 0 rgba(white, 1);
+    }
   }
 
   .button-social {

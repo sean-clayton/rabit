@@ -63,3 +63,15 @@
   padding: .75rem 1.5rem;
   box-shadow: 0 0 1em rgba(black, .25);
 }
+
+.rabit {
+
+  &.fab {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background: $primary;
+    z-index: 1000;
+  }
+
+}
