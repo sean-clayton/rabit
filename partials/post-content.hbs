@@ -1,4 +1,4 @@
-<a class="return-button" data-instant href="{{@blog.url}}" title="Return Home"><i class="fa fa-home"></i></a>
+{{!-- <a class="return-button" data-instant href="{{@blog.url}}" title="Return Home"><i class="fa fa-home"></i></a> --}}
 
 {{#unless image}}<article class="post-container {{post_class}}">{{/unless}}
   {{#if image}}
@@ -46,3 +46,6 @@
     </div>
   </footer>
 {{#unless image}}</article>{{/unless}}
+
+{{#contentFor "fab-action"}}{{@blog.url}}{{/contentFor}}
+{{#contentFor "fab-icon"}}home{{/contentFor}}
