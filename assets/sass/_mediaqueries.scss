@@ -5,7 +5,7 @@
 @media (max-width: 600px) {
 
   html, body {
-    $base-font-size: 14px;
+    $base-font-size: 16px;
     font-size: modular-scale($base-font-size, 0, $major-third);
   }
 
@@ -55,6 +55,12 @@
 }
 
 @media (max-width: 400px) {
+
+  html, body {
+    $base-font-size: 14px;
+    font-size: modular-scale($base-font-size, 0, $major-third);
+  }
+
   .post-content {
     margin: 2em 0 0 0;
   }
