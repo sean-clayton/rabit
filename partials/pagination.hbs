@@ -2,9 +2,13 @@
 	<nav class="pagination" role="pagination">
 		{{#if prev}}
 			<a data-instant class="newer-posts nav-button" href="{{page_url prev}}"><i class="fa fa-angle-left"></i></a>
+		{{else}}
+    		<span data-instant class="newer-posts nav-button disabled"><i class="fa fa-angle-left"></i></span>
 		{{/if}}
 		{{#if next}}
 			<a data-instant class="older-posts nav-button" href="{{page_url next}}"><i class="fa fa-angle-right"></i></a>
+		{{else}}
+            <span data-instant class="older-posts nav-button disabled"><i class="fa fa-angle-right"></i></span>
 		{{/if}}
 	</nav>
 </div>

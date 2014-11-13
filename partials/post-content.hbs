@@ -1,18 +1,23 @@
-{{#if @blog.logo}}{{else}}
 <a class="return-button" data-instant href="{{@blog.url}}" title="Return Home"><i class="fa fa-home"></i></a>
-{{/if}}
 
-<article class="post-container {{post_class}}">
-  <header class="post-header">
-    <h2 class="post-title"><a data-instant href="{{url}}">{{title}}</a></h2>
-    <p class="post-date"><time datetime="{{published_at}}">Published {{date published_at timeago="true"}}</time></p>
-  </header>
+{{#unless image}}<article class="post-container {{post_class}}">{{/unless}}
+  {{#if image}}
+    <header class="post-header hero hero-overlay" style="background-image: url('{{image}}');">
+        <h2 class="post-title"><a data-instant href="{{url}}">{{title}}</a></h2>
+        <p class="post-date"><time datetime="{{published_at}}">Published {{date published_at timeago="true"}}</time></p>
+    </header>
+  {{else}}
+    <header class="post-header">
+      <h2 class="post-title"><a data-instant href="{{url}}">{{title}}</a></h2>
+      <p class="post-date"><time datetime="{{published_at}}">Published {{date published_at timeago="true"}}</time></p>
+    </header>
+  {{/if}}
 
-  <div class="post-content clearfix">
+  <div class="post-content {{#if image}}container{{/if}} clearfix">
 {{{content}}}
   </div>
 
-  <footer class="post-footer clearfix">
+  <footer class="post-footer {{#if image}}container{{/if}} clearfix">
     {{#if tags}}
       <p class="tags-label">Tags</p>
       <section class="tags">
@@ -40,4 +45,4 @@
       </a>
     </div>
   </footer>
-</article>
+{{#unless image}}</article>{{/unless}}

@@ -4,10 +4,18 @@
     -webkit-font-smoothing: antialiased;
   }
 }
+@else {
+  pre, code {
+    -webkit-font-smoothing: subpixel-antialiased !important;
+  }
+}
+
+pre, code {
+  font-size: $code-font-size;
+}
 
 p code {
-  padding: .33em;
-  border-radius: 3px;
+  padding: .33rem;
   color: $wite;
   background: $blak;
   text-shadow: 0 1px 0 rgba(black, 1);
@@ -15,12 +23,12 @@ p code {
 
 pre {
   padding: 1em;
-  border-radius: .33em;
   box-shadow: 0 1px 0 rgba(white, 1), inset 0 3px 9px rgba(black, .25);
   display: block;
   background: $blak;
   color: $wite;
   text-shadow: 0 1px 0 rgba(black, 1);
+  margin: 1rem 0 2rem 0
 }
 
 /* Tomorrow Night Eighties Theme */
@@ -102,6 +110,7 @@ pre {
 .hljs {
   display: block;
   overflow-x: auto;
+  -webkit-text-size-adjust: none;
 }
 
 .coffeescript .javascript,
