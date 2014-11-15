@@ -72,6 +72,15 @@
     left: 1rem;
     background: $primary;
     z-index: 1000;
+
+    &::shadow {
+      #ripple {
+        color: white;
+      }
+      #icon {
+        @include filter(drop-shadow(0 1px 0 rgba(black, .25)));
+      }
+    }
   }
 
 }

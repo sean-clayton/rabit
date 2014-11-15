@@ -165,3 +165,51 @@
     z-index:0;
   }
 }
+
+.parallax {
+  @include perspective($perspective);
+  position: relative;
+  height: 90vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background: black;
+
+  .post-title {
+    padding: 0;
+
+    a {
+      color: white;
+      text-shadow: 0 1px 0 black;
+    }
+  }
+}
+
+.parallax__layer {
+  @include display(flex);
+  @include align-items(center);
+  @include justify-content(center);
+  @include flex-direction(column);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.parallax__layer--base {
+  @include transform(translateZ(0));
+  z-index: 4;
+}
+
+.parallax__layer--back {
+  @include transform(translateZ(-$depth) scale(2));
+  background: no-repeat center center;
+  background-size: cover;
+  opacity: .25;
+}
+
+.parallax__group {
+  position: relative;
+  height: 90vh;
+  transform-style: preserve-3d;
+}

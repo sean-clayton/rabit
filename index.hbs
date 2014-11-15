@@ -11,7 +11,7 @@
 <div id="post-index" class="container">
   <ol class="post-list">
     {{#foreach posts}}
-        <li class="post-stub {{post_class}} {{#if image}}has-image{{/if}}" {{#if image}}style="background-image: url('{{image}}');"{{/if}}>
+      <li class="post-stub {{post_class}} {{#if image}}has-image{{/if}}" {{#if image}}style="background-image: url('{{image}}');"{{/if}}>
         <a data-instant itemprop="url" title="{{title}} | {{@blog.title}}" href="{{url}}">
           <h4 class="post-stub-title">{{title}}</h4>
 
