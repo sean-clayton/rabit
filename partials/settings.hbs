@@ -1,0 +1,14 @@
+{{!--
+
+  Settings file for the rabit theme handlebars files. The settings for styling is in assets/sass/_settings.scss
+
+  Some rules for the road:
+
+  1. Do !NOT! create a new line/indent the {{#contentFor}} blocks! These settings will most likely NOT WORK if you do so. Please keep the formatting as-is :)
+  2. This is only temporary until there is a nicer way (ie. JSON) for Ghost to provide blog-specific vars. The block helper is the only way atm.
+  3. Do !NOT! create a non-block-helper block in this file! This file is ONLY for creating content for the block helpers scattered around the other files. If you create a non-block-helper block in this file, whatever it is you created will be on *every* page. Don't do that :)
+
+--}}
+
+{{! Copyright owner info. Defaulted to the title of your blog. }}
+{{#contentFor "copyright-owner"}}{{@blog.title}}{{/contentFor}}

@@ -30,7 +30,7 @@
     this.target = target;
     // TODO: Make modifications to specified update the underlying player
     this._timing = shared.normalizeTimingInput(timingInput);
-    this.timing = timingInput;
+    this.timing = shared.makeTiming(timingInput);
     // TODO: Make this a live object - will need to separate normalization of
     // keyframes into a shared module.
     if (typeof effect == 'function')
@@ -103,11 +103,13 @@
     }
   };
 
+  var nullTarget = document.createElement('div');
+
   window.document.timeline.play = function(source) {
     // TODO: Handle effect callback.
     if (source instanceof window.Animation) {
-      // TODO: Handle null target.
-      var player = source.target.animate(source._effect, source.timing);
+      var target = source.target ? source.target : nullTarget;
+      var player = target.animate(source._effect, source.timing);
       player.source = source;
       source.player = player;
       return player;
@@ -127,9 +129,7 @@
         player._updateChildren();
       };
 
-
-      // TODO: Use a single static element rather than one per group.
-      var player = document.createElement('div').animate(ticker, source._timing);
+      var player = nullTarget.animate(ticker, source._timing);
       player.source = source;
       player._isGroup = true;
       source.player = player;

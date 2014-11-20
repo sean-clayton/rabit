@@ -33,8 +33,10 @@
 
 .love {
   $color: $innocent;
+  @include filter(drop-shadow(0 0 5px $color));
   color: $color;
-  text-shadow: 0 0 5px $color;
+  height: 1.5em;
+  width: 1.5em;
 }
 
 .button-social {

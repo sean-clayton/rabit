@@ -68,11 +68,15 @@
       return this._currentTime;
     },
     set currentTime(newTime) {
+      newTime = +newTime;
+      if (isNaN(newTime))
+        return;
       if (scope.restart())
         this._startTime = null;
       if (!this.paused && this._startTime != null) {
         this._startTime = this._timeline.currentTime - newTime / this._playbackRate;
       }
+      this._currentTimePending = false;
       if (this._currentTime == newTime)
         return;
       this._tickCurrentTime(newTime, true);
@@ -82,6 +86,9 @@
       return this._startTime;
     },
     set startTime(newTime) {
+      newTime = +newTime;
+      if (isNaN(newTime))
+        return;
       if (this.paused || this._idle)
         return;
       this._startTime = newTime;
