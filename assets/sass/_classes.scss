@@ -33,7 +33,7 @@
 
 .love {
   $color: $innocent;
-  @include filter(drop-shadow(0 0 5px $color));
+  @include filter(drop-shadow(0 0 2px $color));
   color: $color;
   height: 1.5em;
   width: 1.5em;
@@ -73,7 +73,7 @@
     top: 1rem;
     left: 1rem;
     background: $primary;
-    z-index: 1000;
+    z-index: 1000 !important;
 
     &::shadow {
       #ripple {

@@ -15,7 +15,7 @@
 <link rel="icon" href="{{asset "assets/favicon-64.png"}}" sizes="64x64">
 <link rel="icon" href="{{asset "assets/favicon-16.png"}}" sizes="16x16">
 <link rel="apple-touch-icon-precomposed" href="{{asset "assets/mobile-icon.png"}}" sizes="152x152">
-<meta name="msapplication-TileColor" content="#0099ff">
+<meta name="msapplication-TileColor" content="{{{block "ms-tile-color"}}}">
 <meta name="msapplication-TileImage" content="{{asset "assets/favicon-196.png"}}">
 
 {{! Page Meta }}
@@ -37,7 +37,6 @@
 {{! Styles }}
 <link prefetch rel="stylesheet" type="text/css" href="{{asset "css/style.min.css"}}" />
 
-<link rel="import" href="{{asset "bower_components/core-icons/core-icons.html"}}"/>
-<link rel="import" href="{{asset "bower_components/paper-fab/paper-fab.html"}}"/>
+{{{block "polymer-imports"}}}
 
 {{{block "head"}}}

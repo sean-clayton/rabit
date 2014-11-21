@@ -4,11 +4,20 @@
 
   Some rules for the road:
 
-  1. Do !NOT! create a new line/indent the {{#contentFor}} blocks! These settings will most likely NOT WORK if you do so. Please keep the formatting as-is :)
+  1. Please keep the formatting as-is :)
   2. This is only temporary until there is a nicer way (ie. JSON) for Ghost to provide blog-specific vars. The block helper is the only way atm.
   3. Do !NOT! create a non-block-helper block in this file! This file is ONLY for creating content for the block helpers scattered around the other files. If you create a non-block-helper block in this file, whatever it is you created will be on *every* page. Don't do that :)
 
 --}}
 
-{{! Copyright owner info. Defaulted to the title of your blog. }}
+{{! Copyright owner info. Defaulted to the title of your blog. Do !NOT! create a newline here!}}
 {{#contentFor "copyright-owner"}}{{@blog.title}}{{/contentFor}}
+
+{{! Polymer imports. You can create newlines here. }}
+{{#contentFor "polymer-imports"}}
+  <link rel="import" href="{{asset "bower_components/core-icons/core-icons.html"}}"/>
+  <link rel="import" href="{{asset "bower_components/paper-fab/paper-fab.html"}}"/>
+{{/contentFor}}
+
+{{! Tile color for Windows Phones }}
+{{#contentFor "ms-tile-color"}}#ff5588{{/contentFor}}
