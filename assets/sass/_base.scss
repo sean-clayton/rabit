@@ -17,17 +17,17 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: $special-font, "DIN", "Helvetica Neue Condensed", "Helvetica Neue", "Helvetica", Arial, sans-serif;
   font-weight: 300;
-  margin: 0 0 .75em 0;
+  margin: 0 0 1.5rem 0;
   text-transform: none;
   text-shadow: 0 1px 0 rgba(white, 1);
 }
 
 h1 { font-size: 3em; font-weight: 100; }
 h2 { font-size: 2.5em; font-weight: 300; }
-h3 { font-size: 2.25em; font-weight: 300; margin-bottom: 1.8em; }
-h4 { font-size: 2em; margin-bottom: 1em; }
-h5 { font-size: 1.75em; margin-bottom: .8em; }
-h6 { font-size: 1.5em; margin-bottom: .75em; }
+h3 { font-size: 2.25em; font-weight: 300; }
+h4 { font-size: 2em; }
+h5 { font-size: 1.75em; }
+h6 { font-size: 1.5em; }
 
 p {
   line-height: 1.8;
